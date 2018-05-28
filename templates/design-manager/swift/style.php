@@ -185,16 +185,17 @@ if($redux_builder_amp['primary-menu']){?>
 
 <?php // Dropdown CSS
 	if($redux_builder_amp['drp-dwn']){?>
-	.p-menu ul li.menu-item-has-children:hover>ul{display:block;z-index:9;}
+	.p-menu ul li.menu-item-has-children:hover>ul{display:block;z-index:9;padding: 7px;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.19);}
 	.p-menu li a{transition: all 0.3s ease-in-out 0s;}
 	.p-menu .amp-menu li ul{background: <?php echo $redux_builder_amp['primary-menu-background-scheme']['rgba']; ?>;left: 0;min-width: 200px;opacity: 1;position: absolute;top: 100%;transform: translateY(15px);transition: all 0.3s ease-in-out 0s;visibility: hidden;}
 	.p-menu li ul li ul{left: 100%;top: 0;}
 	.p-menu li:hover > ul{opacity: 1;transform: translateY(0px);visibility: visible;transition: all 0.2s ease-in-out 0s;}
 	.p-menu li ul li{display: block;position: relative;}
-	.p-menu .sub-menu li a{padding: 10px;}
-	.p-menu ul li.menu-item-has-children > a:after{content: "\e313";font-family: 'icomoon';background-size: 16px;display: inline-block;top: 3px;font-size: 16px;color: rgba(0,41,96,1);position:relative;padding-left: 10px;line-height:0;color:<?php echo $redux_builder_amp['primary-menu-text-scheme']['rgba']?>;}
+	.p-menu .sub-menu li a{padding: 7px;}
+	.p-menu ul li.menu-item-has-children > a:after{content: "\e313";font-family: 'icomoon';background-size: 16px;display: inline-block;top: 3px;font-size: 16px;color: rgba(0,41,96,1);position:relative;padding-left: 10px;line-height:0;right:10px;color:<?php echo $redux_builder_amp['primary-menu-text-scheme']['rgba']?>;}
 	.p-menu .amp-menu li.menu-item-has-children>ul>li {padding-left: 0px;}
-	.p-menu li.menu-item-has-children:hover > a:after{transform:rotate(180deg);right:-10px;}
+	.p-menu li.menu-item-has-children:hover > a:after{transform:rotate(180deg);right:0px;}
 	<?php } else { ?>
 	.p-menu ul li.menu-item-has-children:hover > ul{display:none;}
 	.p-menu{overflow-x: auto;overflow-y:hidden;white-space: nowrap;}
